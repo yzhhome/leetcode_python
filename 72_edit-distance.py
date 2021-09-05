@@ -13,6 +13,7 @@ def minDistance_memo(word1, word2):
         # 先查之前计算过的
         if (i, j) in memo:
             return memo[(i, j)]
+            
         # base case
         # i走完j还没走完，把word2中剩下的都插入到word1中
         if i == -1: return j + 1

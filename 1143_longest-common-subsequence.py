@@ -11,6 +11,7 @@ def longestCommonSubsequence(text1: str, text2: str) -> int:
 
     # dp数组全部初始化为0
     dp = np.zeros(shape=(m + 1, n + 1), dtype=int)
+    
     for i in range(m + 1):
         for j in range(n + 1):
             # 1<=i<=m,  1<=j<=n
